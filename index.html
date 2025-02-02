@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Budget Tracker</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Personal Budget Tracker</h1>
+        <nav>
+            <a href="#">Home</a> | 
+            <a href="#">Add Expense</a> | 
+            <a href="#">View Budget</a>
+        </nav>    
+    </header>
+
+    <!-- Introduction Section -->
+    <section>
+        <h1>Introduction</h1>
+        <p>Welcome to the Personal Budget Tracker. This tool helps you keep track of your income and expenses, ensuring you stay on top of your financial goals. Add your income and expenses, and view the summary to see where your money is going.</p>
+    </section>
+
+    <!-- Add Income/Expense Section -->
+    <section>
+        <h1>Add New Income or Expense</h1>
+        <form>
+            <div>
+                <label for="amount">Amount: </label>
+                <input type="number" id="amount" placeholder="Enter the Amount..." required>
+            </div>
+            <br>
+            <div>
+                <label>Category: </label>
+                    <select name="categories" id="category">
+                        <option value="Food">Food</option>
+                        <option value="Transportation">Transportation</option>
+                        <option value="Entertainment">Entertainment</option>
+                        <option value="Health">Health</option>
+                    </select>
+            </div>
+            <br>
+            <div>
+                <label for="date">Date: </label>
+                <input type="date" id="date" required>
+            </div>
+            <br>
+            <div>
+                <label>Type: </label>
+                <input type="radio" id="income" name="option">
+                <label for="income">Income</label>
+                <input type="radio" id="expense" name="option">
+                <label for="expense">Expense</label>
+            </div>
+            <br>
+            <button type="submit">Add Entry</button>
+        </form>
+    </section>
+
+    <!-- Budget Summary section -->
+     <section>
+        <h1>Budget Summary</h1>
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Food</td>
+                    <td>2000Rs</td>
+                    <td>01/01/2025</td>
+                    <td>Expense</td>
+                </tr>
+                <tr>
+                    <td>Health</td>
+                    <td>5000Rs</td>
+                    <td>12/01/2025</td>
+                    <td>Expense</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Entertainment</td>
+                    <td>5000Rs</td>
+                    <td>10/01/2025</td>
+                    <td>Income</td>
+                </tr>
+                <tr>
+                    <td>2000Rs</td>
+                    <td>14/01/2025</td>
+                    <td>Expense</td>
+                </tr>
+                <tr>
+                    <td>Transportation</td>
+                    <td>7000Rs</td>
+                    <td>31/01/2025</td>
+                    <td>Expense</td>
+                </tr>
+            </tbody>
+        </table>
+     </section>
+     <br>
+     
+     <!-- Footer Section -->
+      <hr>
+     <footer>
+        Personal Budget Tracker-version 1.0
+        <br>
+        <a href="#">Privacy Policy</a> | 
+        <a href="#">Terms of use</a>
+     </footer>
+</body>
+</html>
