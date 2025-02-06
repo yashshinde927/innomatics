@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+a{
+    text-decoration: none;
+}
+
+/* Header section style */
+header{
+    background-image: url(https://t3.ftcdn.net/jpg/03/15/40/34/360_F_315403482_MVo1gSOOfvwCwhLZ9hfVSB4MZuQilNrx.jpg);
+    background-size: 100% 100%;
+}
+header nav .nav-bar{
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+}
+header nav .nav-bar .logo{
+    display: flex;
+    align-items: center;
+}
+header nav .nav-bar .logo i{
+    margin-left: 5px;
+}
+header nav .nav-bar .nav-content a{
+    color: #fff;
+    padding: 10px;
+    transition: all 0.3s;
+}
+header nav .nav-bar .nav-content a:hover{
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 25px;
+}
+
+/* Hero section style */
+
+header .hero-section{
+    padding: 0 30px;
+    margin-top: 20px;
+    color: #fff;
+    text-align: center;
+}
+header .hero-section h1{
+    background-color: rgba(1, 1, 1,0.5);
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+header .hero-section p{
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+header .hero-section button{
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: brown;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.3s;
+}
+header .hero-section button:hover{
+    background-color: orange;
+}
+
+/* Menu section */
+#menu{
+    text-align: center;
+    padding: 30px;
+}
+#menu h1{
+    font-size: 40px;
+}
+#menu h2{
+    margin-top: 20px;
+}
+#menu .drinks-section{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#menu .drinks-section .card{
+    width: 30%;
+    max-height: 600px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+#menu .drinks-section .card:hover{
+    transform: scale(1.05);
+}
+#menu .drinks-section .card .drink-image{
+    width: 100%;
+    height: 150px;
+}
+#menu .drinks-section .card .drink-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 15px;
+}
+#menu .drinks-section .card .drink-content{
+    padding:20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+#menu .drinks-section .card .drink-content h2{
+    color: brown;
+    font-size: 30px;
+}
+#menu .drinks-section .card .drink-content p{
+    color: goldenrod;
+}
+#menu .drinks-section .card .drink-content .buy-button{
+    margin-top: 20px;
+    display: inline-block;
+    background-color: brown;
+    color: #fff;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+#menu .drinks-section .card .drink-content .buy-button a{
+    color: #fff;
+}
+#menu .drinks-section .card .drink-content a:hover{
+    background-color: orange
+}
+
+#menu .breakfast-section{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#menu .breakfast-section .card{
+    width: 30%;
+    max-height: 600px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+#menu .breakfast-section .card:hover{
+    transform: scale(1.05);
+}
+#menu .breakfast-section .card .breakfast-image{
+    width: 100%;
+    height: 150px;
+}
+#menu .breakfast-section .card .breakfast-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 15px;
+}
+#menu .breakfast-section .card .breakfast-content{
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#menu .breakfast-section .card .breakfast-content h2{
+    color: #3D3D3D;
+    font-size: 30px;
+}
+#menu .breakfast-section .card .breakfast-content p{
+    color: #D8B49B;
+}
+#menu .breakfast-section .card .breakfast-content .buy-button{
+    margin-top: 20px;
+    display: inline-block;
+    background-color: brown;
+    color: #fff;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+#menu .breakfast-section .card .breakfast-content .buy-button a{
+    color: #fff;
+}
+#menu .breakfast-section .card .breakfast-content a:hover{
+    background-color: orange
+}
+
+/* About-section style */
+#about-section{
+    padding: 30px;
+}
+#about-section .about-content h1{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#about-section .about-section-image{
+    /* width: 100%; */
+    /* min-height: 500px; */
+    position: relative;
+}
+#about-section .about-section-image img{
+    width: 100%;
+    /* height: 100%; */
+    object-fit: fill;
+}
+#about-section .about-section-image .about-content{
+    padding: 0 60px;
+    position: absolute;
+    top: 30%;
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 20px;
+}
+#about-section .about-section-image .about-content p span{
+    font-weight: 900;
+    color: orange;
+}
+
+/* Contact-section */
+#contact-section{
+    padding: 30px;
+    display: flex;
+}
+#contact-section .contact-content{
+    text-align: center;
+    padding: 50px 0;
+    width: 50%;
+}
+#contact-section .contact-content h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+#contact-section .contact-content h2{
+    margin-bottom: 10px;
+}
+#contact-section .contact-content span{
+    font-weight: 400;
+    color: #7a7a7a;
+}
+#contact-section .form-section{
+    width: 50%;
+    padding: 0 50px;
+}
+#contact-section .form-section form{
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contact-section .form-section form h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+#contact-section .form-section form .input-box{
+    width: 100%;
+    margin-bottom: 15px;
+}
+#contact-section .form-section form .input-box input{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+#contact-section .form-section form .text-box{
+    width: 100%;
+    height: 150px;
+    margin-bottom: 15px;
+}
+#contact-section .form-section form .text-box textarea{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+}
+#contact-section .form-section form button{
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 10px;
+    width: 100px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+#contact-section .form-section form button:hover{
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+/* Footer Style */
+footer{
+    padding: 50px;
+    background-color:brown;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Media Query */
+@media screen and (max-width:1024px){
+    #about-section .about-section-image .about-content{
+        top: 0;
+    }
+}
+@media screen and (max-width: 768px) 
+{
+    header{
+        width: 100%;
+    }
+    #menu .drinks-section{
+        flex-wrap: wrap;
+    }
+    #menu .drinks-section .card{
+        width: 100%;
+    }
+    #menu .breakfast-section .card{
+        width: 100%;
+    }
+    #about-section .about-section-image .about-content{
+        position: relative;
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+    #about-section .about-content h1{
+        margin-bottom: 10px;
+    }
+    #contact-section {
+        flex-wrap: wrap;
+    }
+    #contact-section .contact-content{
+        width: 100%;
+    }
+    #contact-section .contact-content h1{
+        font-size: 30px;
+    }
+    #contact-section .contact-content h2{
+        font-size: 20px;
+    }
+    #contact-section .form-section{
+        width: 100%;
+    }
+}
+
+
