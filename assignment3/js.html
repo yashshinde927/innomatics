@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Problem Solving</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background: orangered;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background: gold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>JS Problem Solving</h2>
+        <button onclick="atmWithdrawal()">ATM Withdrawal</button>
+        <button onclick="calculateFinalAmount()">Online Shopping Discount</button>
+        <button onclick="calculateGrade()">Student Grading</button>
+        <button onclick="trafficLightControl()">Smart Traffic Light</button>
+        <button onclick="calculateTicketPrice()">Movie Ticket Pricing</button>
+        <button onclick="isEligibleForJob()">Job Application Filter</button>
+        <button onclick="applyCoupon()">E-commerce Coupon</button>
+        <button onclick="choosePlan()">Fitness Membership</button>
+        <button onclick="calculateElectricityBill()">Electricity Bill</button>
+        <button onclick="calculateFlightFare()">Flight Ticket Booking</button>
+    </div>
+
+    <script>
+        function atmWithdrawal() {
+            let balance = 5000, pin = 1234;
+            let amount = parseInt(prompt("Enter withdrawal amount:"));
+            let enteredPin = parseInt(prompt("Enter your PIN:"));
+            if (enteredPin !== pin) return alert("Incorrect PIN");
+            if (amount > balance) return alert("Insufficient Funds");
+            if (amount % 100 !== 0) return alert("Enter amount in multiples of 100");
+            alert("Withdrawal successful!");
+        }
+        
+        function calculateFinalAmount() {
+            let orderAmount = parseFloat(prompt("Enter order amount:"));
+            let discount = orderAmount > 1000 ? 0.2 : orderAmount >= 500 ? 0.1 : 0;
+            let shipping = orderAmount > 50 ? 0 : 10;
+            let finalAmount = orderAmount * (1 - discount) + shipping;
+            alert(`Final amount to pay: $${finalAmount.toFixed(2)}`);
+        }
+        
+        function calculateGrade() {
+            let marks = parseInt(prompt("Enter marks:"));
+            let attendance = parseInt(prompt("Enter attendance percentage:"));
+            if (attendance > 90) marks += 5;
+            let grade = marks >= 90 ? "A" : marks >= 80 ? "B" : marks >= 70 ? "C" : marks >= 60 ? "D" : "F";
+            alert(`Final Grade: ${grade}`);
+        }
+        
+        function trafficLightControl() {
+            let density = prompt("Enter traffic density (Heavy/Moderate/Light):");
+            let time = density === "Heavy" ? 60 : density === "Moderate" ? 40 : 20;
+            alert(`Green light duration: ${time} seconds`);
+        }
+        
+        function calculateTicketPrice() {
+            let age = parseInt(prompt("Enter your age:"));
+            let showTime = parseInt(prompt("Enter show time (24-hour format):"));
+            let price = 12;
+            if (showTime < 17) price *= 0.8;
+            if (age > 60) price *= 0.7;
+            if (age < 12) price *= 0.6;
+            alert(`Ticket Price: $${price.toFixed(2)}`);
+        }
+        
+        function isEligibleForJob() {
+            let age = parseInt(prompt("Enter age:"));
+            let experience = parseInt(prompt("Enter experience (years):"));
+            let qualification = prompt("Enter qualification:");
+            let result = age >= 21 && age <= 55 && experience >= 2 && qualification === "Bachelor's Degree" ? "Eligible" : "Not eligible";
+            alert(result);
+        }
+        
+        function applyCoupon() {
+            let orderAmount = parseFloat(prompt("Enter order amount:"));
+            let couponCode = prompt("Enter coupon code (DISCOUNT10/FREESHIP):");
+            let discount = couponCode === "DISCOUNT10" && orderAmount > 500 ? 0.1 : 0;
+            let shipping = couponCode === "FREESHIP" && orderAmount > 200 ? 0 : 10;
+            let finalAmount = orderAmount * (1 - discount) + shipping;
+            alert(`Final amount: $${finalAmount.toFixed(2)}`);
+        }
+        
+        function choosePlan() {
+            let planType = prompt("Enter plan type (Basic/Premium/VIP):");
+            let price = planType === "Basic" ? 20 : planType === "Premium" ? 50 : 80;
+            alert(`Plan: ${planType}, Cost: $${price}`);
+        }
+        
+        function calculateElectricityBill() {
+            let units = parseInt(prompt("Enter electricity units consumed:"));
+            let timeOfDay = prompt("Enter time (Normal/Peak):");
+            let rate = units <= 100 ? 5 : units <= 300 ? 4 : 3;
+            if (timeOfDay === "Peak") rate *= 1.1;
+            let bill = units * rate;
+            alert(`Electricity Bill: $${bill.toFixed(2)}`);
+        }
+        
+        function calculateFlightFare() {
+            let classType = prompt("Enter class type (Economy/Business/First):");
+            let luggageWeight = parseInt(prompt("Enter luggage weight (kg):"));
+            let isStudent = confirm("Are you a student?");
+            let isSenior = confirm("Are you a senior citizen?");
+            let baseFare = 300 + (classType === "Business" ? 200 : classType === "First" ? 500 : 0);
+            let luggageCharge = luggageWeight > 20 ? Math.ceil((luggageWeight - 20) / 10) * 50 : 0;
+            let discount = isStudent ? 0.15 : isSenior ? 0.1 : 0;
+            let finalFare = (baseFare + luggageCharge) * (1 - discount);
+            alert(`Final Flight Fare: $${finalFare.toFixed(2)}`);
+        }
+    </script>
+</body>
+</html>
