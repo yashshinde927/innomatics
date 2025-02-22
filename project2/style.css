@@ -1,0 +1,231 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: lightgreen;
+            background-image: url("https://img.gamedistribution.com/854fd8048c814acaa86b0faffe364290-1280x720.jpeg");
+            background-size: 100%, 90vw;
+
+        }   
+        .landing{
+            color: white;
+            float: left;
+            margin-left: 25%;
+            transform: rotate(5deg);
+        }
+        .btn1{
+            background-color: white;
+            border: solid grey;
+            padding-left: 4%;
+            padding-right: 4%;
+            padding-top: 5%;
+            padding-bottom: 5.5%;
+            text-align: center;
+            font-size: x-large;
+            transform: rotate(2deg);
+            margin-right: 47%;
+            margin-top: 1%;
+            font-weight: bold;
+            border-radius:13% 19% 11% 13%;
+            box-shadow: -2px -2px 6px 5px gainsboro;
+           
+            cursor: pointer;
+        }
+       
+        
+        .btn2{
+            background-color: white;
+            border: solid grey;
+            padding-left: 4.3%;
+            padding-right: 4.3%;
+            padding-top: 6%;
+            padding-bottom: 6%;
+            text-align: center;
+            font-size: x-large;
+            transform: rotate(1deg);
+            cursor: pointer;
+            margin-right: 77%;
+            margin-top: -21%;
+            font-weight: bold;
+            border-radius:13% 13% 14% 13%;
+            box-shadow: -2px -2px 6px 5px gainsboro;
+            background-image: url("https://th.bing.com/th/id/R.171469519d57e63bf0cb18c3257797e3?rik=Rs1FirAHPKiyXA&riu=http%3a%2f%2fbaltana.com%2ffiles%2fwallpapers-2%2fFruit-HD-Wallpapers-03484.jpg&ehk=vCkyvMr8GDHyj4WOqKHz1Tz91y4XEOUinujHPnA5gYw%3d&risl=&pid=ImgRaw&r=0");
+            
+        }
+        .btn3{
+            background-color: white;
+            border: solid grey;
+            padding-left: 3.5%;
+            padding-right:3.5%;
+            padding-top: 6%;
+            padding-bottom: 6%;
+            text-align: center;
+            font-size: x-large;
+            transform: rotate(1deg);
+            cursor: pointer;
+            margin-right: 76%;
+            margin-top: 1%;
+            font-weight: bold;
+            border-radius:13% 19% 14% 13%;
+            box-shadow: -2px -2px 6px 5px gainsboro;
+            background-image: url("https://th.bing.com/th/id/R.171469519d57e63bf0cb18c3257797e3?rik=Rs1FirAHPKiyXA&riu=http%3a%2f%2fbaltana.com%2ffiles%2fwallpapers-2%2fFruit-HD-Wallpapers-03484.jpg&ehk=vCkyvMr8GDHyj4WOqKHz1Tz91y4XEOUinujHPnA5gYw%3d&risl=&pid=ImgRaw&r=0");
+            
+        }
+        .btn4{
+            background-color: white;
+            border: solid grey;
+            padding-left: 3.5%;
+            padding-right:3.5%;
+            padding-top: 6%;
+            padding-bottom: 6%;
+            text-align: center;
+            font-size: x-large;
+            transform: rotate(1deg);
+            cursor: pointer;position:relative;
+      margin-top: -40%;
+            margin-right: 45%;
+            font-weight: bold;;
+            border-radius:13% 19% 14% 13%;
+            box-shadow: -2px -2px 6px 5px gainsboro;
+            background-image: url("https://th.bing.com/th/id/R.171469519d57e63bf0cb18c3257797e3?rik=Rs1FirAHPKiyXA&riu=http%3a%2f%2fbaltana.com%2ffiles%2fwallpapers-2%2fFruit-HD-Wallpapers-03484.jpg&ehk=vCkyvMr8GDHyj4WOqKHz1Tz91y4XEOUinujHPnA5gYw%3d&risl=&pid=ImgRaw&r=0");
+            
+        }
+
+        
+        #game-container {
+            display: none;
+            border: 2px solid;
+            background-color: white;
+            height: 98vh;
+            padding-top: 6%;
+            color: black;
+            text-align: center;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 100px);
+            grid-gap: 10px;
+            margin-right: 60%;
+            background-color: white;
+            color: black;
+            justify-content: center;
+        }
+        .card {
+            width: 100px;
+            height: 110px;
+            background-color: white;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .btnrst{
+            background-color: black;
+            color: white;
+            padding: 3% 3% 3% 3%;
+            margin-top: -25%;float: right;
+            margin-right: 20%;
+            cursor: pointer;
+        }
+        .score{
+            float: right;
+            margin-right: 20%;
+            font-size: x-large;
+            font-weight: bolder;
+        }
+        .hidden-card {
+            background-color: rgb(53, 46, 46);
+        }
+        @media screen and (max-width:600px) {
+            .body{
+                width: 100%;
+                height: 100%;
+                background-repeat:no-repeat;
+
+                
+            }
+            .landing{
+                
+                margin-left: 0%;
+                width: 100%;
+                background-color: white;
+                color: white;
+                text-shadow: 2px 2px 2px purple;
+                transform: rotate(0);
+                font-size: 50px;
+                padding-bottom: 5%;
+                margin-top: -3%;
+            }
+            .btn1{
+                float: left;
+                margin-top: 2%;
+                margin-left: 0%;
+                margin-right: 0%;
+                padding-left:42.7%;
+                padding-right: 40%;
+                border-radius: 0 0 0 0;
+                transform: rotate(0);
+
+            }
+            .btn2{
+                float: left;
+                margin-top: 2%;
+                margin-left: 0%;
+                margin-right: 0%;
+                padding-left:39.5%;
+                padding-right: 40%;
+                border-radius: 0 0 0 0;
+                transform: rotate(0);
+
+            }
+            .btn3{
+                float: left;
+                margin-top: 2%;
+                margin-left: 0%;
+                margin-right: 0%;
+                padding-left:35%;
+                padding-right: 40%;
+                border-radius: 0 0 0 0;
+                transform: rotate(0);
+            }
+            .btn4{
+                float: left;
+                margin-top: 2%;
+                margin-left: 0%;
+                margin-right: 0%;
+                padding-left:37%;
+                padding-right: 40%;
+                border-radius: 0 0 0 0;
+                transform: rotate(0);
+
+            }
+            .game-container{
+                width: 100%;
+                height: 160vh;
+                margin-right: 20%;
+                float: right;
+                text-align: center;
+                padding-bottom: 30%;
+            }
+            .grid{
+                grid-template-columns: repeat(2, 100px);
+                margin-top: 78%;
+                margin-left: 10%;
+                margin-right: 3%;
+            }
+            .card{
+                width:90px;
+                height: 60px;
+                margin-top: 12%;
+        
+            }
+            .btnrst{
+                margin-top:1vh;
+                padding-left: 37%;
+                padding-right: 40%;
+                float: left;
+                font-size: x-large;
+            }
+        }
